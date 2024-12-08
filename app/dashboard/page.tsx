@@ -30,6 +30,23 @@ export default function Dashboard() {
           ))}
         </ul>
       </section>
+      <section className="mt-8 bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold text-gray-800">Feedback Sentiment</h2>
+        <div className="flex mt-4 gap-4">
+          <div className="flex flex-col items-center">
+            <p className="text-2xl font-bold text-green-500">{feedbackSentiment.positive}%</p>
+            <p className="text-sm text-gray-600">Positive</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="text-2xl font-bold text-yellow-500">{feedbackSentiment.neutral}%</p>
+            <p className="text-sm text-gray-600">Neutral</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="text-2xl font-bold text-red-500">{feedbackSentiment.negative}%</p>
+            <p className="text-sm text-gray-600">Negative</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
