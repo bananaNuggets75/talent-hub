@@ -5,73 +5,128 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-color: #1d4ed8; /* Tailwind's blue color */
-  --secondary-color: #ef4444; /* Tailwind's red color */
-  --accent-color: #10b981; /* Tailwind's green color */
+  --primary: #4CAF50; /* Green */
+  --secondary: #FF5722; /* Red */
+  --accent: #FFC107; /* Yellow */
+  --link: #3b82f6; /* Blue */
+  --light-bg: #f7fafc;
+  --card-bg: #ffffff;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary-color: #3b82f6; /* Dark mode variant of blue */
-    --secondary-color: #f87171; /* Dark mode red */
-    --accent-color: #34d399; /* Dark mode green */
+    --primary: #81C784;
+    --secondary: #FF7043;
+    --accent: #FFEB3B;
+    --link: #42a5f5;
+    --light-bg: #212121;
+    --card-bg: #333333;
+    --shadow-light: 0 4px 6px rgba(255, 255, 255, 0.2);
+    --shadow-dark: 0 4px 6px rgba(255, 255, 255, 0.4);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Arial', Helvetica, sans-serif;
-}
-
-h1, h2 {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s;
+  color: var(--link);
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary);
 }
 
-button {
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 0.375rem;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
 }
 
-button:hover {
-  background-color: var(--secondary-color);
+h2 {
+  color: var(--primary);
 }
 
-.bg-primary {
-  background-color: var(--primary-color);
+section {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-light);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-.bg-accent {
-  background-color: var(--accent-color);
+section:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+section h2 {
+  color: var(--primary);
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
 }
 
 .text-accent {
-  color: var(--accent-color);
+  color: var(--accent);
 }
 
-.dark .bg-primary {
-  background-color: #3b82f6; /* Tailwind's dark blue */
+.text-link {
+  color: var(--link);
 }
 
-.dark .bg-accent {
-  background-color: #34d399; /* Tailwind's dark green */
+.bg-light {
+  background-color: var(--light-bg);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.shadow-light {
+  box-shadow: var(--shadow-light);
+}
+
+.shadow-dark {
+  box-shadow: var(--shadow-dark);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.card-title {
+  color: var(--primary);
 }
