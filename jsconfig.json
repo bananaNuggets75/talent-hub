@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "jsx": "preserve", 
+    "target": "es6",  
+    "module": "esnext",
+    "lib": ["dom", "es6"], 
+    "allowJs": true,
+    "strict": true
   }
 }
