@@ -15,13 +15,15 @@ export default function Dashboard() {
   });
 
   return (
-    <div className="min-h-screen p-8 bg-gray-100">
-      <h1 className="text-2xl font-bold text-blue-600">Dashboard</h1>
-      <section className="mt-8 bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold text-gray-800">High-Potential Employees</h2>
+    <div className="min-h-screen p-8 bg-light">
+      <h1 className="text-3xl font-bold text-primary mb-8">Dashboard</h1>
+
+      {/* High-Potential Employees Section */}
+      <section className="mt-8 bg-card p-6 rounded-lg shadow-light">
+        <h2 className="text-xl font-semibold text-primary">High-Potential Employees</h2>
         <ul className="mt-4">
           {highPotentialEmployees.map((employee) => (
-            <li key={employee.id} className="p-4 border-b">
+            <li key={employee.id} className="p-4 border-b hover:bg-gray-100 transition">
               <p className="font-semibold text-gray-700">{employee.name}</p>
               <p className="text-sm text-gray-600">
                 Score: {employee.score} | Recent: {employee.recentAchievements}
@@ -31,15 +33,17 @@ export default function Dashboard() {
         </ul>
       </section>
 
-      <section className="mt-8 bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold text-gray-800">Performance Trends</h2>
+      {/* Performance Trends Section */}
+      <section className="mt-8 bg-card p-6 rounded-lg shadow-light">
+        <h2 className="text-xl font-semibold text-primary">Performance Trends</h2>
         <p className="text-sm text-gray-600 mt-4">
           Visualizations for team performance trends can go here.
         </p>
       </section>
 
-      <section className="mt-8 bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold text-gray-800">Feedback Sentiment</h2>
+      {/* Feedback Sentiment Section */}
+      <section className="mt-8 bg-card p-6 rounded-lg shadow-light">
+        <h2 className="text-xl font-semibold text-primary">Feedback Sentiment</h2>
         <div className="flex mt-4 gap-4">
           <div className="flex flex-col items-center">
             <p className="text-2xl font-bold text-green-500">{feedbackSentiment.positive}%</p>
@@ -56,31 +60,25 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <section className="mt-8 bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold text-gray-800">Skill Gap Summary</h2>
+      {/* Skill Gap Summary Section */}
+      <section className="mt-8 bg-card p-6 rounded-lg shadow-light">
+        <h2 className="text-xl font-semibold text-primary">Skill Gap Summary</h2>
         <p className="text-sm text-gray-600 mt-4">
           Key skill gaps identified in the organization include: <strong>Leadership</strong>, <strong>Data Analysis</strong>, and <strong>Advanced Programming</strong>.
         </p>
-        <p className="text-sm text-blue-600 mt-2 underline cursor-pointer">
+        <p className="text-sm text-primary mt-2 underline cursor-pointer">
           View detailed analysis →
         </p>
       </section>
 
-      <section className="mt-8 bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-semibold text-gray-800">Quick Links</h2>
+      {/* Quick Links Section */}
+      <section className="mt-8 bg-card p-6 rounded-lg shadow-light">
+        <h2 className="text-xl font-semibold text-primary">Quick Links</h2>
         <div className="flex gap-4 mt-4">
-          <a href="/employee-profile" className="text-blue-600 underline">
-            Employee Profiles
-          </a>
-          <a href="/performance-review" className="text-blue-600 underline">
-            Performance Reviews
-          </a>
-          <a href="/skill-gap-analysis" className="text-blue-600 underline">
-            Skill Gap Analysis
-          </a>
-          <a href="/survey-feedback" className="text-blue-600 underline">
-            Feedback Surveys
-          </a>
+          <a href="/employee-profile" className="text-link hover:text-primary transition duration-200">Employee Profiles</a>
+          <a href="/performance-review" className="text-link hover:text-primary transition duration-200">Performance Reviews</a>
+          <a href="/skill-gap-analysis" className="text-link hover:text-primary transition duration-200">Skill Gap Analysis</a>
+          <a href="/survey-feedback" className="text-link hover:text-primary transition duration-200">Feedback Surveys</a>
         </div>
       </section>
     </div>

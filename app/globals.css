@@ -5,17 +5,128 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #4CAF50; /* Green */
+  --secondary: #FF5722; /* Red */
+  --accent: #FFC107; /* Yellow */
+  --link: #3b82f6; /* Blue */
+  --light-bg: #f7fafc;
+  --card-bg: #ffffff;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #81C784;
+    --secondary: #FF7043;
+    --accent: #FFEB3B;
+    --link: #42a5f5;
+    --light-bg: #212121;
+    --card-bg: #333333;
+    --shadow-light: 0 4px 6px rgba(255, 255, 255, 0.2);
+    --shadow-dark: 0 4px 6px rgba(255, 255, 255, 0.4);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--link);
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+section {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-light);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+section:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+section h2 {
+  color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-link {
+  color: var(--link);
+}
+
+.bg-light {
+  background-color: var(--light-bg);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.shadow-light {
+  box-shadow: var(--shadow-light);
+}
+
+.shadow-dark {
+  box-shadow: var(--shadow-dark);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: var(--shadow-light);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.card-title {
+  color: var(--primary);
 }
