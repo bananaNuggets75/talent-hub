@@ -65,6 +65,24 @@ export default function Dashboard() {
           View detailed analysis →
         </p>
       </section>
+
+      <section className="mt-8 bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold text-gray-800">Quick Links</h2>
+        <div className="flex gap-4 mt-4">
+          <a href="/employee-profile" className="text-blue-600 underline">
+            Employee Profiles
+          </a>
+          <a href="/performance-review" className="text-blue-600 underline">
+            Performance Reviews
+          </a>
+          <a href="/skill-gap-analysis" className="text-blue-600 underline">
+            Skill Gap Analysis
+          </a>
+          <a href="/survey-feedback" className="text-blue-600 underline">
+            Feedback Surveys
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
