@@ -30,6 +30,14 @@ export default function Dashboard() {
           ))}
         </ul>
       </section>
+
+      <section className="mt-8 bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold text-gray-800">Performance Trends</h2>
+        <p className="text-sm text-gray-600 mt-4">
+          Visualizations for team performance trends can go here.
+        </p>
+      </section>
+
       <section className="mt-8 bg-white p-6 rounded-lg shadow">
         <h2 className="text-xl font-semibold text-gray-800">Feedback Sentiment</h2>
         <div className="flex mt-4 gap-4">
