@@ -40,7 +40,13 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-blue-600">Performance Reviews</h3>
             <p className="text-sm text-gray-600">Conduct and track performance evaluations.</p>
           </a>
-          
+          <a
+            href="/reports"
+            className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
+          >
+            <h3 className="text-lg font-semibold text-blue-600">Reports</h3>
+            <p className="text-sm text-gray-600">Generate insights and download team performance data.</p>
+          </a>
         </div>
       </main>
 
