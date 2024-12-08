@@ -33,7 +33,14 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-blue-600">Employee Profiles</h3>
             <p className="text-sm text-gray-600">Manage employee skills, certifications, and feedback.</p>
           </a>
-         
+          <a
+            href="/performance-review"
+            className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
+          >
+            <h3 className="text-lg font-semibold text-blue-600">Performance Reviews</h3>
+            <p className="text-sm text-gray-600">Conduct and track performance evaluations.</p>
+          </a>
+          
         </div>
       </main>
 
