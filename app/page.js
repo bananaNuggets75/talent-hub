@@ -26,8 +26,14 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-blue-600">Dashboard</h3>
             <p className="text-sm text-gray-600">View performance trends and employee highlights.</p>
           </a>
+          <a
+            href="/employee-profile"
+            className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
+          >
+            <h3 className="text-lg font-semibold text-blue-600">Employee Profiles</h3>
+            <p className="text-sm text-gray-600">Manage employee skills, certifications, and feedback.</p>
+          </a>
          
-          
         </div>
       </main>
 
