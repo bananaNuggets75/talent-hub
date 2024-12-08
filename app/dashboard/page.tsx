@@ -55,6 +55,16 @@ export default function Dashboard() {
           </div>
         </div>
       </section>
+
+      <section className="mt-8 bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold text-gray-800">Skill Gap Summary</h2>
+        <p className="text-sm text-gray-600 mt-4">
+          Key skill gaps identified in the organization include: <strong>Leadership</strong>, <strong>Data Analysis</strong>, and <strong>Advanced Programming</strong>.
+        </p>
+        <p className="text-sm text-blue-600 mt-2 underline cursor-pointer">
+          View detailed analysis →
+        </p>
+      </section>
     </div>
   );
 }
