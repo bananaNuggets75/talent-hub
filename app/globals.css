@@ -5,10 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #4CAF50; /* Green */
-  --secondary: #FF5722; /* Red */
-  --accent: #FFC107; /* Yellow */
-  --link: #3b82f6; /* Blue */
+  --primary: #4CAF50;
+  --secondary: #FF5722;
+  --accent: #FFC107; 
+  --link: #3b82f6; 
   --light-bg: #f7fafc;
   --card-bg: #ffffff;
   --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -128,5 +128,156 @@ section h2 {
 }
 
 .card-title {
-  color: var(--primary);
+  color: var(--primary);@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  /* Theme Variables */
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: #4CAF50; /* Green */
+    --secondary: #FF5722; /* Red */
+    --accent: #FFC107; /* Yellow */
+    --link: #3b82f6; /* Blue */
+    --light-bg: #f7fafc;
+    --card-bg: #ffffff;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-dark: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #121212;
+      --foreground: #e5e5e5;
+      --primary: #81C784;
+      --secondary: #FF7043;
+      --accent: #FFEB3B;
+      --link: #42a5f5;
+      --light-bg: #1f1f1f;
+      --card-bg: #242424;
+      --shadow-light: 0 4px 6px rgba(255, 255, 255, 0.1);
+      --shadow-dark: 0 4px 6px rgba(255, 255, 255, 0.3);
+    }
+  }
+  
+  /* Reset and Typography */
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+  }
+  
+  /* Links */
+  a {
+    color: var(--link);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: var(--accent);
+  }
+  
+  /* Containers and Cards */
+  section {
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow-light);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-dark);
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+  }
+  
+  /* Utility Classes */
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .text-secondary {
+    color: var(--secondary);
+  }
+  
+  .text-accent {
+    color: var(--accent);
+  }
+  
+  .text-link {
+    color: var(--link);
+  }
+  
+  .bg-light {
+    background-color: var(--light-bg);
+  }
+  
+  .bg-card {
+    background-color: var(--card-bg);
+  }
+  
+  .shadow-light {
+    box-shadow: var(--shadow-light);
+  }
+  
+  .shadow-dark {
+    box-shadow: var(--shadow-dark);
+  }
+  
+  /* Cards */
+  .card {
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    padding: 16px;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
 }
