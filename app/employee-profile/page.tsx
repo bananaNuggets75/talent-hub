@@ -44,6 +44,12 @@ export default function EmployeeProfile() {
           ))}
         </ul>
       </section>
+
+      <section className="mt-8 bg-white p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold text-gray-800">Add New Employee</h2>
+        <p className="text-sm text-gray-600 mt-4">
+        </p>
+      </section>
     </div>
   );
 }
