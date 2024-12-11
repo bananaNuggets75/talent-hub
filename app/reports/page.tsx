@@ -51,7 +51,13 @@ const ReportPage: React.FC<ReportPageProps> = ({
         <h3>Financial Summary</h3>
         <p>{financialSummary}</p>
       </div>
-      
+
+      {/* Action Buttons */}
+      <div className="report-actions">
+        <button className="report-btn" onClick={handleDownload}>Download PDF</button>
+        <button className="report-btn" onClick={handleEdit}>Edit Report</button>
+      </div>
+
       {/* Footer Section */}
       <div className="report-footer">
         <p>Report generated on {generatedDate}</p>
