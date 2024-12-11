@@ -50,6 +50,15 @@ export default function PerformanceReview() {
             onChange={handleReviewChange}
           />
         </div>
+        <div>
+          <label>Performance:</label>
+          <input
+            type="text"
+            name="performance"
+            value={review.performance}
+            onChange={handleReviewChange}
+          />
+        </div>
         
       </form>
     </div>
