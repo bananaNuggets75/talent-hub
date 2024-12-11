@@ -39,6 +39,19 @@ const ReportPage: React.FC<ReportPageProps> = ({
       {/* Description Section */}
       <p className="report-description">{description}</p>
 
+      {/* Report Content */}
+      <div className="report-main-content">
+        <h3>Key Highlights</h3>
+        <ul>
+          {keyHighlights.map((highlight, index) => (
+            <li key={index}>{highlight}</li>
+          ))}
+        </ul>
+
+        <h3>Financial Summary</h3>
+        <p>{financialSummary}</p>
+      </div>
+      
       {/* Footer Section */}
       <div className="report-footer">
         <p>Report generated on {generatedDate}</p>
