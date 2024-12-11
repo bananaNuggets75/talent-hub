@@ -1,10 +1,12 @@
+'use client';
+
 import React from 'react';
 
 interface ReportPageProps {
   title: string;
   subtitle: string;
   description: string;
-  keyHighlights: string[];
+  keyHighlights?: string[]; // Optional prop
   financialSummary: string;
   generatedDate: string;
 }
@@ -13,7 +15,7 @@ const ReportPage: React.FC<ReportPageProps> = ({
   title,
   subtitle,
   description,
-  keyHighlights,
+  keyHighlights = [], // Default to an empty array if undefined
   financialSummary,
   generatedDate,
 }) => {
@@ -43,9 +45,13 @@ const ReportPage: React.FC<ReportPageProps> = ({
       <div className="report-main-content">
         <h3>Key Highlights</h3>
         <ul>
-          {keyHighlights.map((highlight, index) => (
-            <li key={index}>{highlight}</li>
-          ))}
+          {keyHighlights.length > 0 ? (
+            keyHighlights.map((highlight, index) => (
+              <li key={index}>{highlight}</li>
+            ))
+          ) : (
+            <li>No key highlights available.</li>
+          )}
         </ul>
 
         <h3>Financial Summary</h3>
