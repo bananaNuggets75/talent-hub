@@ -41,6 +41,15 @@ export default function PerformanceReview() {
             onChange={handleReviewChange}
           />
         </div>
+        <div>
+          <label>Employee Name:</label>
+          <input
+            type="text"
+            name="employeeName"
+            value={review.employeeName}
+            onChange={handleReviewChange}
+          />
+        </div>
         
       </form>
     </div>
