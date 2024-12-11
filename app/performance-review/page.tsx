@@ -70,7 +70,15 @@ export default function PerformanceReview() {
             max="5"
           />
         </div>
-        
+        <div>
+          <label>Review Date:</label>
+          <input
+            type="date"
+            name="reviewDate"
+            value={review.reviewDate}
+            onChange={handleReviewChange}
+          />
+        </div>
       </form>
     </div>
   );
