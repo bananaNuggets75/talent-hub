@@ -4,8 +4,6 @@ import Navbar from "../components/navbar";
 export default function Home() {
   return (
     <div>
-      {/* Navbar Component */}
-      <Navbar />
 
       <div className="min-h-screen flex flex-col items-center justify-between p-8 pb-20 sm:p-20 font-sans bg-gray-100">
     {/* Header */}
