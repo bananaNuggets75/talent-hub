@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Navbar from "@/components/navbar";
+import Link from "next/link";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
 
         {/* Navigation Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl">
-          <a
+          <Link
             href="/dashboard"
             className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
           >
@@ -36,8 +37,8 @@ export default function Home() {
             <p className="text-sm text-gray-600">
               View performance trends and employee highlights.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/employee-profile"
             className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
           >
@@ -47,8 +48,8 @@ export default function Home() {
             <p className="text-sm text-gray-600">
               Manage employee skills, certifications, and feedback.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/performance-review"
             className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
           >
@@ -58,8 +59,8 @@ export default function Home() {
             <p className="text-sm text-gray-600">
               Conduct and track performance evaluations.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/reports"
             className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition text-left"
           >
@@ -67,7 +68,7 @@ export default function Home() {
             <p className="text-sm text-gray-600">
               Generate insights and download team performance data.
             </p>
-          </a>
+          </Link>
         </div>
       </main>
 

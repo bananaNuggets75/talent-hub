@@ -1,45 +1,48 @@
-'use client';
-
-import React from 'react';
 import Link from 'next/link';
+import React from 'react';
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        {/* Logo or Brand Name */}
-        <div className="navbar-brand">
-          <Link href="/home">
-            <a className="navbar-logo">Dashboard</a>
+    <header>
+      <nav className="flex items-center justify-between px-6 py-4 bg-blue-600 text-white">
+        {/* Logo */}
+        <div className="flex lg:flex-1">
+          <Link href="/" className="text-lg font-bold">
+            TalentHub
           </Link>
         </div>
 
         {/* Navigation Links */}
-        <ul className="navbar-links">
+        <ul className="flex space-x-4">
           <li>
-            <Link href="/home">
-              <a>Home</a>
+            <Link href="/dashboard" className="hover:underline">
+              Dashboard
             </Link>
           </li>
           <li>
-            <Link href="/employee-profile">
-              <a>Employee Profile</a>
+            <Link href="/employee-profile" className="hover:underline">
+              Employee Profiles
             </Link>
           </li>
           <li>
-            <Link href="/reports">
-              <a>Reports</a>
+            <Link href="/reports" className="hover:underline">
+              Reports
             </Link>
           </li>
           <li>
-            <Link href="/performance-reviews">
-              <a>Performance Reviews</a>
+            <Link href="/performance-review" className="hover:underline">
+              Performance Reviews
             </Link>
           </li>
         </ul>
-      </div>
-    </nav>
-  );
-};
 
-export default Navbar;
+        {/* Right Navigation Section */}
+        <div className="right-nav">
+          <button className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition">
+            <Link href="/login">Log In</Link>
+          </button>
+        </div>
+      </nav>
+    </header>
+  );
+}
