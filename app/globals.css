@@ -329,3 +329,36 @@ section h2 {
   }
 }
 
+nav ul li {
+  cursor: pointer;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--hover-color);
+}
+
+nav .right-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .right-nav .login-button {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--foreground);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav .right-nav .login-button:hover {
+  color: var(--hover-color);
+}
