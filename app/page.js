@@ -1,9 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
+    <div>
+      <Navbar/>
     <div className="min-h-screen flex flex-col items-center justify-between p-8 pb-20 sm:p-20 font-sans bg-gray-100">
       {/* Navbar Component */}
       <Navbar />
@@ -78,6 +79,7 @@ export default function Home() {
           © {new Date().getFullYear()} TalentHub. All Rights Reserved.
         </p>
       </footer>
+    </div>
     </div>
   );
 }
