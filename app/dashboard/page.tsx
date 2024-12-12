@@ -70,17 +70,6 @@ export default function Dashboard() {
           View detailed analysis →
         </p>
       </section>
-
-      {/* Quick Links Section */}
-      <section className="mt-8 bg-card p-6 rounded-lg shadow-light">
-        <h2 className="text-xl font-semibold text-primary">Quick Links</h2>
-        <div className="flex gap-4 mt-4">
-          <a href="/employee-profile" className="text-link hover:text-primary transition duration-200">Employee Profiles</a>
-          <a href="/performance-review" className="text-link hover:text-primary transition duration-200">Performance Reviews</a>
-          <a href="/skill-gap-analysis" className="text-link hover:text-primary transition duration-200">Skill Gap Analysis</a>
-          <a href="/survey-feedback" className="text-link hover:text-primary transition duration-200">Feedback Surveys</a>
-        </div>
-      </section>
     </div>
   );
 }
