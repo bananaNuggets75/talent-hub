@@ -1,3 +1,18 @@
+<div align="center">
+  <a href="https://github.com/bananaNuggets75/talent-hub">
+  </a>
+
+  <h3 align="center">Talent Hub</h3>
+  <p align="center">
+    <h4 align="center">A web-based system that helps organizations manage employee performance, track skills and development progress, and identify high-potential employees for promotion.</h4>
+    <br />
+    <a href="https://github.com/bananaNuggets75/talent-hub/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/bananaNuggets75/talent-hub/issues">Request Feature</a>
+  </p>
+</div>
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
