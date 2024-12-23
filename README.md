@@ -57,12 +57,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ```bash
 npm install
 # and
-npm install chart.js
-# and
-npm install react-chartjs-2@latest chart.js@latest
-# and
-npm install chart.js@3.9.1
-# and
 npm install next react react-dom
 # and
 npm install firebase
