@@ -5,7 +5,7 @@ import React from 'react';
 export default function Navbar() {
   return (
     <header>
-      <nav className="flex items-center justify-between p-4 bg-white shadow-md">
+      <nav className="flex items-center justify-between p-4 shadow-md" style={{ backgroundColor: '#4CAF50' }}>
         <div className="flex lg:flex-1">
           <Link href="/" className="text-lg font-bold text-gray-800">
             TalentHub
@@ -13,21 +13,21 @@ export default function Navbar() {
         </div>
         <ul className="flex space-x-4">
           <li>
-            <Link href="/dashboard" className="text-gray-800 hover:text-blue-600">Dashboard</Link>
+            <Link href="/dashboard" className="text-gray-800 hover:text-purple-600">Dashboard</Link>
           </li>
           <li>
-            <Link href="/employee-profile" className="text-gray-800 hover:text-blue-600">Employees Profile</Link>
+            <Link href="/employee-profile" className="text-gray-800 hover:text-purple-600">Employees Profile</Link>
           </li>
           <li>
-            <Link href="/performance-review" className="text-gray-800 hover:text-blue-600">Performance Review</Link>
+            <Link href="/performance-review" className="text-gray-800 hover:text-purple-600">Performance Review</Link>
           </li>
           <li>
-            <Link href="/reports" className="text-gray-800 hover:text-blue-600">Reports</Link>
+            <Link href="/reports" className="text-gray-800 hover:text-purple-600">Reports</Link>
           </li>
         </ul>
         <div className="right-nav">
           <Link href="/login">
-            <button className="login-button bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            <button className="login-button bg-blue-purple text-gray-800 px-4 py-2 rounded hover:bg-purple-700 transition">
               Log In
             </button>
           </Link>
