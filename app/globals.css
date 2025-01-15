@@ -353,10 +353,12 @@ nav .right-nav .login-button {
   font-size: 0.875rem;
   font-weight: bold;
   color: var(--foreground);
-  background-color: transparent;
+  background-color: #153216;
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  margin-left: 450px;
+  
 }
 
 nav .right-nav .login-button:hover {
